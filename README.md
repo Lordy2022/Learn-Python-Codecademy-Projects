@@ -1,4 +1,4 @@
-# Codecademy-Projects
+# Learn Python Codecademy Projects
 A Portfolio of the coding projects I have completed, as part of the Learn Python Codecademy course.
 
 
