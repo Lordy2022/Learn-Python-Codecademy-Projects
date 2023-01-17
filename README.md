@@ -16,3 +16,7 @@ Magic 8-Ball:
 Gradebook:
 
 - I have written a Python program to organize a students subjects and grades for half of an academic year - creating a mid-term gradebook.
+
+Len's Slice:
+
+- Len’s Slice is a new pizza joint in the neighbourhood. I have used my knowledge of Python lists to organize some of their sales data. 
