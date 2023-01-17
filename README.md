@@ -19,4 +19,4 @@ Gradebook:
 
 Len's Slice:
 
-- Len’s Slice is a new pizza joint in the neighbourhood. I have used my knowledge of Python lists to organize some of their sales data. 
+- Len’s Slice is a new pizza joint in the neighbourhood. I have used my knowledge of Python lists to organize some of the restaurants sales data.     
