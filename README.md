@@ -27,10 +27,10 @@ Carly's Clippers:
 
   I was provided with three lists: 
 
-  Hairstyles: The names of the cuts offered at Carly’s Clippers.
+  1) Hairstyles: The names of the cuts offered at Carly’s Clippers.
   
-  Prices: The price of each hairstyle in the hairstyles list.
+  2) Prices: The price of each hairstyle in the hairstyles list.
   
-  Last week: The number of purchases for each hairstyle type in the last week.
+  3) Last week: The number of purchases for each hairstyle type in the last week.
 
   Each index in hairstyles corresponds to an associated index in prices and last_week. For example, The hairstyle "bouffant" has an associated price of 30 from the       prices list, and was purchased 2 times in the last week as shown in the last_week list. Each of these elements are in the first index of their respective lists.
