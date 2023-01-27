@@ -27,7 +27,7 @@ Carly's Clippers:
 
   I was provided with three lists: 
 
-  1) Hairstyles: The names of the cuts offered at Carly’s Clippers.
+ 1) Hairstyles: The names of the cuts offered at Carly’s Clippers.
   
    2) Prices: The price of each hairstyle in the hairstyles list.
   
