@@ -33,4 +33,4 @@ Carly's Clippers:
   
   Last week: The number of purchases for each hairstyle type in the last week.
 
-      Each index in hairstyles corresponds to an associated index in prices and last_week. For example, The hairstyle "bouffant" has an associated price of 30 from the       prices list, and was purchased 2 times in the last week as shown in the last_week list. Each of these elements are in the first index of their respective lists.
+  Each index in hairstyles corresponds to an associated index in prices and last_week. For example, The hairstyle "bouffant" has an associated price of 30 from the       prices list, and was purchased 2 times in the last week as shown in the last_week list. Each of these elements are in the first index of their respective lists.
