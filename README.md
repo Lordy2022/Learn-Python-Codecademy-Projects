@@ -25,3 +25,6 @@ Carly's Clippers:
 
 - I am now doing some Data Analyst work for the small business Carly’s Clippers, the newest hair salon on the block. My job is to go through the lists of data that have been collected in the past couple of weeks. I then calculated some important metrics that Carly can use to plan out the operation of the business for the rest of the month.  
 
+Getting Ready for Physics Class:
+
+- I am helping a physics teacher who is preparing for the upcoming semester. His aims are to provide his students with some functions, that will help them calculate some fundamental physical properties.
