@@ -1,1 +1,17 @@
+#predefined variable assignments.
 
+train_mass = 22680
+train_acceleration = 10
+train_distance = 100
+bomb_mass = 1
+
+# Write a function called f_to_c that takes an input f_temp (a temperature in Fahrenheit) and converts it to c_temp (that temperature in Celsius). It should then return celsius temperature:
+
+def f_to_c(f_temp):
+  c_temp = (f_temp - 32) * 5/9
+  return c_temp
+
+
+#Let’s test your function with a value of 100 Fahrenheit:
+
+f100_in_celsius = f_to_c(100)
