@@ -109,7 +109,7 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 
 #1) Replace all the instances of ;,; in daily_sales with some other character and save the result to daily_sales_replaced:
 
-daily_sales_replaced = daily_sales.replace(";,;", "+ ")
+daily_sales_replaced = daily_sales.replace(";,;", "+")
 
 #2) Split daily_sales_replaced around commas and save it to a new list daily_transactions:
 
