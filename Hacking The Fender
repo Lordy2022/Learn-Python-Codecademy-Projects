@@ -1,6 +1,7 @@
 # 1) We’ve opened up a communications link to The Fender‘s secret computer. We need you to write a program that will read in the compromised usernames and passwords that are stored in a file called "passwords.csv". First import the CSV module, since we’ll be needing it to parse the data:
 
 import csv
+import json
 
 # 2) We need to create a list of users whose passwords have been compromised, create a new list and save it to the variable compromised_users:
 
@@ -25,10 +26,25 @@ with open('passwords.csv') as password_file:
 
 # 4.2) Write the username of each compromised_user in compromised_users to compromised_user_file:
 
-with open('compromised_user_txt', 'w') as compromised_user_file:
+with open('compromised_users.txt', 'w') as compromised_user_file:
   for compromised_user in compromised_users:
     compromised_user_file.write(compromised_user)
 
-# 5) Exit out of that with block. You’re doing great so far! We’ve got the data we need to employ as insurance against The Fender. Your boss needs to know that you were successful in retrieving that compromised data. We’ll need to send him an encoded message over the internet. Let’s use JSON to do that. First we’ll need to import the json module:
+# 5) Exit out of that with block. You’re doing great so far! We’ve got the data we need to employ as insurance against The Fender. Your boss needs to know that you were successful in retrieving that compromised data. We’ll need to send him an encoded message over the internet. Let’s use JSON to do that. First we’ll need to import the json module (see top of project):
 
-import json
+# 6) Open a new JSON file in write-mode called boss_message.json. Save the file object to the variable boss_message:
+
+# 6.1) Create a Python dictionary object within your with statement that relays a boss message. Call this boss_message_dict. Give it a "recipient" key with a value "The Boss". Also give it a "message" key with the value "Mission Success":
+
+# 6.2) Write out boss_message_dict to boss_message using json.dump():
+
+with open('boss_message.json', 'w') as boss_message:
+  boss_message_dict = {
+    'recipient': 'The Boss',
+    'message': 'Mission Success'
+  }
+  json.dump(boss_message_dict, boss_message)
+
+# 7) Now that we’ve safely recovered the compromised users we’ll want to remove the "passwords.csv" file completely. Create a new with block and open "new_passwords.csv" in write-mode. Save the file object to a variable called new_passwords_obj:
+
+with open('new_passwords.csv', 'w') as new_passwords_obj:
