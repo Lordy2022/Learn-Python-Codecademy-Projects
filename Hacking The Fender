@@ -6,3 +6,13 @@ import csv
 
 compromised_users = []
 
+# 3.1) Pass the password_file object holder to our CSV reader for parsing. Save the parsed csv. DictReader object as password_csv:
+
+# 3.2) Now we’ll want to iterate through each of the lines in the CSV. Create a for loop and save each row of the CSV into the temporary variable password_row:
+
+# 3.3) Inside your for loop, print out password_row['Username']. This is the username of the person whose password was compromised. Run your code, do you see a list of usernames?:
+
+with open('passwords.csv') as password_file:
+  password_csv = csv.DictReader(password_file)
+  for password_row in password_csv:
+    print(password_row['Username'])
