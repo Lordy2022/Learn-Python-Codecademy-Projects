@@ -6,6 +6,8 @@ import csv
 
 compromised_users = []
 
+# 3) Next we’ll need you to open up the file itself. Store it in a file object called password_file:
+
 # 3.1) Pass the password_file object holder to our CSV reader for parsing. Save the parsed csv. DictReader object as password_csv:
 
 # 3.2) Now we’ll want to iterate through each of the lines in the CSV. Create a for loop and save each row of the CSV into the temporary variable password_row:
@@ -15,4 +17,18 @@ compromised_users = []
 with open('passwords.csv') as password_file:
   password_csv = csv.DictReader(password_file)
   for password_row in password_csv:
-    print(password_row['Username'])
+    compromised_users.append(password_row['Username'])
+
+# 4) Exit out of your with block for "passwords.csv". We have all the data we need from that file. Start a new with block, opening a file called compromised_users.txt. Open this file in write-mode, saving the file object as compromised_user_file:
+
+# 4.1) Inside the new context-managed block opened by the with statement start a new for loop. Iterate over each of your compromised_users:
+
+# 4.2) Write the username of each compromised_user in compromised_users to compromised_user_file:
+
+with open('compromised_user_txt', 'w') as compromised_user_file:
+  for compromised_user in compromised_users:
+    compromised_user_file.write(compromised_user)
+
+# 5) Exit out of that with block. You’re doing great so far! We’ve got the data we need to employ as insurance against The Fender. Your boss needs to know that you were successful in retrieving that compromised data. We’ll need to send him an encoded message over the internet. Let’s use JSON to do that. First we’ll need to import the json module:
+
+import json
